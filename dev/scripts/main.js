@@ -96,6 +96,7 @@ foodApp.getSingleRecipe = (recipeID) => {
         dataType: 'json',
     })
         .then((result) => {
+            console.log(result);
             //  format the returned courses and cuisine attributes for the page
             let courses = "---";
             if (result.attributes.course) {
